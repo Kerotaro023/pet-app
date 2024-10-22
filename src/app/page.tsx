@@ -1,4 +1,4 @@
-import { PetAppComponent } from "../components/pet-app"; // パスを修正
+import PetAppComponent from "../components/pet-app"; // エクスポートの修正
 
 export default function Home() {
   return (

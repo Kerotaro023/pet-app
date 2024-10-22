@@ -20,7 +20,7 @@ const foodTypes: FoodType[] = [
 const LEVEL_THRESHOLD = 100
 const GAME_OVER_DELAY = 5000 // 5 seconds
 
-export function PetAppComponent() {
+export default function PetApp() {
   const [petImage, setPetImage] = useState<string | null>(null)
   const [petName, setPetName] = useState<string>('')
   const [isEditingName, setIsEditingName] = useState(false)
@@ -154,13 +154,9 @@ export function PetAppComponent() {
           onClick={petPet}
         >
           <div className="relative p-2">
-            <Image
+            <img
               src={petImage}
               alt="Pet"
-              layout="responsive"
-              width={500}
-              height={300}
-              objectFit="cover"
               className="object-cover rounded-full"
               style={{ width: `${getPetSize()}px`, height: `${getPetSize()}px` }}
             />
