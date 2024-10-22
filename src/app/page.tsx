@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { PetAppComponent } from "../components/pet-app"; // パスを修正
 
 export default function Home() {

@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 type FoodType = {
   name: string
@@ -153,9 +154,11 @@ export function PetAppComponent() {
           onClick={petPet}
         >
           <div className="relative p-2">
-            <img
+            <Image
               src={petImage}
               alt="Pet"
+              layout="fill"
+              objectFit="cover"
               className="object-cover rounded-full"
               style={{ width: `${getPetSize()}px`, height: `${getPetSize()}px` }}
             />
