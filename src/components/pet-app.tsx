@@ -154,11 +154,11 @@ export default function PetApp() {
           onClick={petPet}
         >
           <div className="relative p-2">
-            <img
+            <Image
               src={petImage}
               alt="Pet"
-              className="object-cover rounded-full"
-              style={{ width: `${getPetSize()}px`, height: `${getPetSize()}px` }}
+              width={getPetSize()}
+              height={getPetSize()}
             />
             <span className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl">
               {getEmoji()}
