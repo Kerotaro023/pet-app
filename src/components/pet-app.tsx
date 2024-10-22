@@ -157,7 +157,9 @@ export function PetAppComponent() {
             <Image
               src={petImage}
               alt="Pet"
-              layout="fill"
+              layout="responsive"
+              width={500}
+              height={300}
               objectFit="cover"
               className="object-cover rounded-full"
               style={{ width: `${getPetSize()}px`, height: `${getPetSize()}px` }}
